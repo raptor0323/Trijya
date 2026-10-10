@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base Layer ──────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    @apply font-body text-trijya-ink bg-white;
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+    line-height: 1.2;
+  }
+
+  /* Focus-visible for keyboard accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-trijya-yellow rounded-sm;
+  }
+
+  /* Remove default focus ring for mouse users */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Selection colour */
+  ::selection {
+    @apply bg-trijya-yellow text-trijya-ink;
+  }
+}
+
+/* ─── Component Layer ─────────────────────────────────────── */
+@layer components {
+
+  /* Section wrapper */
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Trijya card */
+  .trijya-card {
+    @apply bg-white rounded-2xl shadow-card p-6 border border-gray-100 transition-all duration-300 ease-out;
+  }
+
+  .trijya-card:hover {
+    @apply shadow-card-hover -translate-y-1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .trijya-card:hover {
+      transform: none;
+    }
+  }
+
+  /* Primary button */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-trijya-yellow text-trijya-ink font-semibold transition-all duration-200 ease-out hover:bg-trijya-yellow-dark hover:shadow-glow-yellow focus-visible:ring-2 focus-visible:ring-trijya-ink focus-visible:ring-offset-2;
+  }
+
+  /* Secondary / outline button */
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-2xl border-2 border-trijya-ink text-trijya-ink font-semibold transition-all duration-200 ease-out hover:bg-trijya-ink hover:text-white focus-visible:ring-2 focus-visible:ring-trijya-yellow focus-visible:ring-offset-2;
+  }
+
+  /* Chip / tag */
+  .chip {
+    @apply inline-block px-3 py-1 rounded-full text-xs font-medium bg-trijya-cream text-trijya-ink border border-trijya-yellow/30;
+  }
+
+  /* Section heading */
+  .section-heading {
+    @apply text-3xl md:text-4xl font-display font-bold text-trijya-ink;
+  }
+
+  /* Input fields */
+  .form-input {
+    @apply block w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-trijya-ink placeholder-trijya-grey-light transition-colors duration-200 focus:border-trijya-yellow focus:ring-2 focus:ring-trijya-yellow/20 focus:outline-none;
+  }
+}
+
+/* ─── Utility Layer ───────────────────────────────────────── */
+@layer utilities {
+
+  /* Scroll progress bar (used by ScrollProgress component) */
+  .scroll-progress-bar {
+    @apply fixed top-0 left-0 h-[3px] bg-trijya-yellow z-50;
+    transform-origin: left;
+  }
+
+  /* Cream alternating section bg */
+  .bg-section-alt {
+    @apply bg-trijya-cream;
+  }
+
+  /* Hide scrollbar but allow scrolling */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
