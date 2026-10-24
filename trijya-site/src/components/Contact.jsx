@@ -293,7 +293,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <span className="block text-xs text-trijya-grey-light font-medium">Location</span>
-                    <span className="font-semibold text-trijya-ink">Pune, Maharashtra, India</span>
+                    <span className="font-semibold text-trijya-ink">{contact.address}</span>
                   </div>
                 </div>
 

@@ -24,14 +24,14 @@ export const brand = {
 
 // ─── Contact ────────────────────────────────────────────────
 export const contact = {
-  phone: '+91 XXXXX XXXXX',         // PLACEHOLDER — replace with real number
-  phoneHref: 'tel:+91XXXXXXXXXX',   // PLACEHOLDER
-  whatsapp: '+91 XXXXX XXXXX',      // PLACEHOLDER
-  whatsappHref: 'https://wa.me/91XXXXXXXXXX?text=Hi%20Trijya%2C%20I%20would%20like%20to%20book%20a%20session.',
-  email: 'hello@trijya.in',         // PLACEHOLDER
-  emailHref: 'mailto:hello@trijya.in',
-  address: 'PLACEHOLDER — Pune | Nashik | Bramhapuri, Maharashtra, India',
-  mapsLink: 'https://maps.google.com/?q=PLACEHOLDER',  // PLACEHOLDER — paste Google Maps share link
+  phone: '+91 7020845003',         // PLACEHOLDER — replace with real number
+  phoneHref: 'tel:+917020845003',   // PLACEHOLDER
+  whatsapp: '+91 7020845003',      // PLACEHOLDER
+  whatsappHref: 'https://wa.me/917020845003?text=Hi%20Trijya%2C%20I%20would%20like%20to%20book%20a%20session.',
+  email: 'trijya.counselling@gmail.com',         // PLACEHOLDER
+  emailHref: 'mailto:trijya.counselling@gmail.com',
+  address: 'Maharashtra, India',
+  mapsLink: '',  // PLACEHOLDER — paste Google Maps share link
   hours: 'Mon–Sat, 10 AM – 7 PM IST',
   mode: 'Online & In-person',
 };
@@ -41,12 +41,12 @@ export const team = [
   {
     id: 'member-1',
     name: 'Rutuja',   // PLACEHOLDER
-    role: 'Clinical Psychologist',
+    role: 'Psychologist',
     qualifications: 'Master\'s in Clinical Psychology',  // PLACEHOLDER
     languages: ['English', 'Marathi', 'Hindi', 'Sign Language'],
     experience: '2+ years',             // PLACEHOLDER
     bio: 'It\'s never too late to start!',
-    specialties: ['Anxiety & Depression', 'Trauma (EMDR)', 'Personality Assessment'],
+    specialties: ['Young Adults', 'Deaf People', 'Group Therapy', 'Children with Disability'],
     photo: null,                         // PLACEHOLDER — set to '/photos/member-1.webp' when ready
     bookingLink: null,                   // PLACEHOLDER — e.g. Calendly link or WhatsApp deep-link
   },
@@ -58,7 +58,7 @@ export const team = [
     languages: ['English', 'Marathi','Hindi'],
     experience: '  2+ years',             // PLACEHOLDER
     bio: 'Here to hold space as you gow into the best version of yourself! ',
-    specialties: ['Relationship Issues', 'Self-esteem', 'Career Counselling', 'Adolescent Therapy'],
+    specialties: ['Geriatric', 'De-addiction', 'Young Adults','Stress Management', 'Wellness Workshops'],
     photo: null,
     bookingLink: null,
   },
@@ -70,7 +70,7 @@ export const team = [
     languages: ['Marathi', 'English','Hindi','Telugu'],
     experience: '  2+ years',             // PLACEHOLDER
     bio: 'Every story is unique and I\'m here to listen yours!',
-    specialties: ['Personality Assessment','Trauma','CBT','ACT','Mindfulness', 'Group Therapy', 'Stress Management', 'Wellness Workshops'],
+    specialties: ['Children with Disability','Mindfulness', 'Group Therapy', 'Stress Management'],
     photo: null,
     bookingLink: null,
   },
